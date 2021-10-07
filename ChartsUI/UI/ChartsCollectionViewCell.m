@@ -47,6 +47,8 @@
 - (void)updateChartsSendUI {
     self.contentBgImage = [UIImage imageNamed:@"right"];
     self.contentBgImage = [self.contentBgImage resizableImageWithCapInsets:UIEdgeInsetsMake(35, 10, 10, 22)];
+    [self.contentBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 10)];
+
     CGSize size = [self.contentBtn.titleLabel sizeThatFits:CGSizeMake(MAXWIDTH, 200)];
     [self.contentBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(-20);
@@ -60,6 +62,9 @@
 - (void)updateChartsReceiveUI {
     self.contentBgImage = [UIImage imageNamed:@"left"];
     self.contentBgImage = [self.contentBgImage resizableImageWithCapInsets:UIEdgeInsetsMake(35, 22, 10, 10)]; // 默认使用的是平铺的模式
+    // NSDirectionalEdgeInsets iOS15 使用contentInsets 效果更好
+    // https://stackoverflow.com/questions/68328038/imageedgeinsets-was-deprecated-in-ios-15-0
+    [self.contentBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 0)];
     
     CGSize size = [self.contentBtn.titleLabel sizeThatFits:CGSizeMake(MAXWIDTH, 200)];
     [self.contentBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
