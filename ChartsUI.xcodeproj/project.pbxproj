@@ -10,6 +10,7 @@
 		181740EE5E153D23E80177A5 /* Pods_ChartsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E753B7033D37F0E9FB5D340 /* Pods_ChartsUI.framework */; };
 		9600E207270CA58200892220 /* Msg.m in Sources */ = {isa = PBXBuildFile; fileRef = 9600E206270CA58200892220 /* Msg.m */; };
 		9600E20A270CA71900892220 /* ChartsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9600E209270CA71900892220 /* ChartsCollectionViewCell.m */; };
+		9600E20D270EF4CC00892220 /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9600E20C270EF4CC00892220 /* ItemModel.m */; };
 		9694003D2707150A0006EE0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9694003C2707150A0006EE0E /* AppDelegate.m */; };
 		969400402707150A0006EE0E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9694003F2707150A0006EE0E /* SceneDelegate.m */; };
 		969400432707150A0006EE0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 969400422707150A0006EE0E /* ViewController.m */; };
@@ -54,6 +55,8 @@
 		9600E206270CA58200892220 /* Msg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Msg.m; sourceTree = "<group>"; };
 		9600E208270CA71900892220 /* ChartsCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartsCollectionViewCell.h; sourceTree = "<group>"; };
 		9600E209270CA71900892220 /* ChartsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartsCollectionViewCell.m; sourceTree = "<group>"; };
+		9600E20B270EF4CC00892220 /* ItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
+		9600E20C270EF4CC00892220 /* ItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemModel.m; sourceTree = "<group>"; };
 		969400382707150A0006EE0E /* ChartsUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9694003B2707150A0006EE0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9694003C2707150A0006EE0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +118,35 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9600E20E270EF4D800892220 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9600E205270CA58200892220 /* Msg.h */,
+				9600E206270CA58200892220 /* Msg.m */,
+				9600E20B270EF4CC00892220 /* ItemModel.h */,
+				9600E20C270EF4CC00892220 /* ItemModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9600E20F270EF4E800892220 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9600E208270CA71900892220 /* ChartsCollectionViewCell.h */,
+				9600E209270CA71900892220 /* ChartsCollectionViewCell.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9600E210270EF4F300892220 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				969400412707150A0006EE0E /* ViewController.h */,
+				969400422707150A0006EE0E /* ViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		9694002F2707150A0006EE0E = {
 			isa = PBXGroup;
 			children = (
@@ -140,21 +172,18 @@
 		9694003A2707150A0006EE0E /* ChartsUI */ = {
 			isa = PBXGroup;
 			children = (
+				9600E210270EF4F300892220 /* VC */,
+				9600E20F270EF4E800892220 /* UI */,
+				9600E20E270EF4D800892220 /* Model */,
 				9694003B2707150A0006EE0E /* AppDelegate.h */,
 				9694003C2707150A0006EE0E /* AppDelegate.m */,
 				9694003E2707150A0006EE0E /* SceneDelegate.h */,
 				9694003F2707150A0006EE0E /* SceneDelegate.m */,
-				969400412707150A0006EE0E /* ViewController.h */,
-				969400422707150A0006EE0E /* ViewController.m */,
-				9600E208270CA71900892220 /* ChartsCollectionViewCell.h */,
-				9600E209270CA71900892220 /* ChartsCollectionViewCell.m */,
 				969400442707150A0006EE0E /* Main.storyboard */,
 				969400472707150D0006EE0E /* Assets.xcassets */,
 				969400492707150D0006EE0E /* LaunchScreen.storyboard */,
 				9694004C2707150D0006EE0E /* Info.plist */,
 				9694004D2707150D0006EE0E /* main.m */,
-				9600E205270CA58200892220 /* Msg.h */,
-				9600E206270CA58200892220 /* Msg.m */,
 			);
 			path = ChartsUI;
 			sourceTree = "<group>";
@@ -426,6 +455,7 @@
 			files = (
 				9600E207270CA58200892220 /* Msg.m in Sources */,
 				969400432707150A0006EE0E /* ViewController.m in Sources */,
+				9600E20D270EF4CC00892220 /* ItemModel.m in Sources */,
 				9694003D2707150A0006EE0E /* AppDelegate.m in Sources */,
 				9600E20A270CA71900892220 /* ChartsCollectionViewCell.m in Sources */,
 				9694004E2707150D0006EE0E /* main.m in Sources */,

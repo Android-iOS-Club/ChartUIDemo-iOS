@@ -6,12 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
-@class Msg;
+@class ItemModel;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ChartsCollectionViewCell : UICollectionViewCell
-- (void)configUIWith:(Msg *)msg;
-
+- (void)configUIWith:(ItemModel *)item;
+// 回调事件
 @property (nonatomic, copy) void(^contentLongPassBlock)(UILongPressGestureRecognizer *gesture);
 @property (nonatomic, copy) void(^coententTapBlock)(UITapGestureRecognizer *gesture);
 
